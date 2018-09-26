@@ -1,0 +1,9 @@
+[email]
+    username = "xxx@163.com"
+    password = "xxx"
+    dst0 = "xxx@163.com"
+    dst1 = "xxx@qq.com"
+
+[jpush]
+    appKey       = "xxx"
+    masterSecret = "xxx"

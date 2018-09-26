@@ -1,0 +1,6 @@
+caches/
+*.log
+*.png
+
+.DS_Store
+*.toml
