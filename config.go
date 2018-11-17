@@ -13,9 +13,9 @@ var (
 	Config *toml.Tree
 )
 
-func init() {
-
-	if Config, err := toml.LoadFile("config.toml"); err != nil {
+func Init() {
+	Config, err := toml.LoadFile("config.toml")
+	if err != nil {
 		srcName := "config.toml.example"
 		dstName := "config.toml"
 		src, err := os.Open(srcName)
@@ -51,4 +51,5 @@ func init() {
 
 		*/
 	}
+
 }

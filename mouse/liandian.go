@@ -5,9 +5,17 @@ import (
 )
 
 func main() {
-	kit.Fmt("...")
+	// 左
+	// for {
+	// 	kit.MoveClick(196, 472)
+	// 	kit.Sleep(333)
+	// 	kit.MoveClick(380, 412)
+	// 	kit.Sleep(333)
+	// }
 	for {
-		kit.LeftClick()
-		kit.Sleep(999)
+		kit.MoveClick(995, 466)
+		kit.Sleep(333)
+		kit.MoveClick(1170, 412)
+		kit.Sleep(333)
 	}
 }
