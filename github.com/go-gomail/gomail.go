@@ -2,14 +2,14 @@
 package main
 
 import (
-	"github.com/vcgo/kit"
+	"fmt"
+
 	"github.com/vcgo/test"
 	"gopkg.in/gomail.v2"
 )
 
 func main() {
-	test.Init()
-	kit.Fmt("...", test.Config)
+
 	// config
 	username := test.Config.Get("email.username").(string)
 	password := test.Config.Get("email.password").(string)
@@ -21,13 +21,13 @@ func main() {
 	m.SetHeader("To", dst0)
 	m.SetHeader("Subject", "233Hello看看!")
 	m.SetBody("text/html", "233Hello <b>可靠Bob</b> and <i>Cora</i>!")
-	m.Attach("~/koala.png")
+	m.Attach("./README.md")
 
 	d := gomail.NewDialer("smtp.163.com", 25, username, password)
 
 	if err := d.DialAndSend(m); err != nil {
 		panic(err)
 	} else {
-		kit.Fmt("Success", true)
+		fmt.Println("Success", true)
 	}
 }

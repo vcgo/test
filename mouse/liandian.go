@@ -5,13 +5,14 @@ import (
 )
 
 func main() {
-	// 左
-	// for {
-	// 	kit.MoveClick(196, 472)
-	// 	kit.Sleep(333)
-	// 	kit.MoveClick(380, 412)
-	// 	kit.Sleep(333)
-	// }
+	// Clt0
+	for {
+		kit.MoveClick(196, 472)
+		kit.Sleep(333)
+		kit.MoveClick(380, 412)
+		kit.Sleep(333)
+	}
+	// Clt1
 	for {
 		kit.MoveClick(995, 466)
 		kit.Sleep(333)
