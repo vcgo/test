@@ -8,14 +8,16 @@ import (
 	"github.com/pelletier/go-toml"
 )
 
-// Config can use as: test.Config.Get()...
-var (
-	Config *toml.Tree
-)
+var Config *toml.Tree
 
+// Config can use as:
+// 		test.Conf()
+// 		test.Config.Get()...
 func init() {
-
-	if Config, err := toml.LoadFile("config.toml"); err != nil {
+	// 注意局部变量和全局变量
+	conf, err := toml.LoadFile("config.toml")
+	Config = conf
+	if err != nil {
 		srcName := "config.toml.example"
 		dstName := "config.toml"
 		src, err := os.Open(srcName)
@@ -29,26 +31,9 @@ func init() {
 		}
 		defer dst.Close()
 		io.Copy(dst, src)
-		fmt.Println("Error ", err.Error(), Config)
+		fmt.Println("Error ", err.Error())
+		return
 	} else {
-		/*
-
-			 This is Config use func
-
-			// retrieve data directly
-			user := Config.Get("postgres.user").(string)
-			password := Config.Get("postgres.password").(string)
-
-			// or using an intermediate object
-			configTree := Config.Get("postgres").(*toml.Tree)
-			user = configTree.Get("user").(string)
-			password = configTree.Get("password").(string)
-			fmt.Println("User is", user, " and password is", password)
-
-			// show where elements are in the file
-			fmt.Printf("User position: %v\n", configTree.GetPosition("user"))
-			fmt.Printf("Password position: %v\n", configTree.GetPosition("password"))
-
-		*/
+		return
 	}
 }

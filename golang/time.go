@@ -26,4 +26,7 @@ func main() {
 	tomorrowWeek := tomorrow.Weekday()
 	fmt.Println("今天星期几：", weekDay, weekDay.String())
 	fmt.Println("明天星期几：", tomorrowWeek, tomorrowWeek == 0, tomorrowWeek.String())
+	// str to time
+	t, err := time.Parse("2006-01-02T15:04:05Z", "2018-11-17T08:40:49Z")
+	fmt.Println("Str To Time", t.Unix(), err)
 }
