@@ -4,3 +4,4 @@ caches/
 
 .DS_Store
 *.toml
+tmp/

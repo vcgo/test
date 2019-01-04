@@ -45,9 +45,10 @@ func init() {
 func main() {
 
 	// 上传本地文件。
-	err := bucket.PutObjectFromFile("2333.png", "test/0.png")
+	err := bucket.PutObjectFromFile("koala.png", "tmp/koala.png")
 	if err != nil {
 		fmt.Println("Error:", err)
 		os.Exit(-1)
 	}
+	fmt.Println("...", err)
 }

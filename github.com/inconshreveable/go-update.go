@@ -13,7 +13,7 @@ import (
 // Update 之后仍运行
 // 二进制文件追加几个字符串仍可以运行
 
-// go build -o bin/selfupdate program/selfupdate.go
+// go build -o bin/selfupdate github.com/inconshreveable/go-update.go
 // ./bin/selfupdate
 // vim ./selfupdate，已自追加字符串
 

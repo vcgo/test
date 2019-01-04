@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/pelletier/go-toml"
+	toml "github.com/pelletier/go-toml"
 )
 
 var Config *toml.Tree
@@ -15,6 +15,8 @@ var Config *toml.Tree
 // 		test.Config.Get()...
 func init() {
 	// 注意局部变量和全局变量
+	// Config, err := toml.LoadFile("config.toml")
+	// 如果像上边这样写，不会复制给 test.Config
 	conf, err := toml.LoadFile("config.toml")
 	Config = conf
 	if err != nil {
