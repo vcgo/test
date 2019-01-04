@@ -1,14 +1,20 @@
 [email]
-    username = "xxx@163.com"
-    password = "xxx"
-    dst0 = "xxx@163.com"
-    dst1 = "xxx@qq.com"
+    username = "xx@163.com"
+    password = "xx"
+    dst0 = "xx@qq.com"
+    dst1 = "xx@163.com"
 
 [jpush]
-    appKey       = "xxx"
-    masterSecret = "xxx"
+    appKey = "xx"
+    masterSecret = "xx"
 
 [qiniu]
-	bucket    = "xxx"
-	accessKey = "xxx"
-	secretKey = "xxx"
+	bucket    = "xx"
+	accessKey = "xx"
+	secretKey = "xx"
+
+[aliyunoss]
+    endpoint        = "xx"
+	accessKeyId     = "xx"
+	accessKeySecret = "xx"
+	bucketName      = "xx"
