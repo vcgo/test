@@ -1,3 +1,7 @@
+// github.com/lxn/win
+// win.GetKeyState 监听键盘事件
+// 从而获取用户键盘操作
+
 package main
 
 import (
