@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
+	for {
+		kit.LeftClick()
+		kit.Sleep(233)
+	}
 	// Clt0
 	for {
 		kit.MoveClick(196, 472)

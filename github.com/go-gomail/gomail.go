@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/vcgo/test"
-	"gopkg.in/gomail.v2"
+	gomail "gopkg.in/gomail.v2"
 )
 
 func main() {

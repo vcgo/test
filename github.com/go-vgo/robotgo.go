@@ -1,43 +1,78 @@
+// github.com/go-vgo/robotgo
+// 测试
+
 package main
 
 import (
-	"github.com/go-vgo/robotgo"
+	"fmt"
+	"os"
+	"reflect"
+
 	"github.com/vcgo/kit"
+
+	"github.com/go-vgo/robotgo"
 )
+
+type M struct{}
 
 func main() {
 
-	go func() {
-		i := 0
-		for {
-			if i%3 == 0 {
-				ke := robotgo.AddEvent("k")
-				if ke == 0 {
-					kit.Fmt("keypress k.")
-				}
-			} else if i%3 == 1 {
-				se := robotgo.AddEvent("s")
-				if se == 0 {
-					kit.Fmt("keypress s.")
-				}
-			} else {
-				robotgo.StopEvent()
-			}
-			i++
-			kit.Fmt("i", i)
-		}
-	}()
+	funcName := os.Args[1]
+
+	// 动态调用
+	m := reflect.ValueOf(&M{}).MethodByName(funcName)
+	v := make([]reflect.Value, 0)
+	m.Call(v)
+}
+
+// Event 测试按键监听
+func (m *M) Event() {
 
 	go func() {
-		robotgo.AddEvent("[")
-		for {
-			robotgo.StopEvent()
-			kit.Fmt("Wait stop event.")
-			kit.Sleep(23)
+		s := robotgo.Start()
+		defer robotgo.End()
+		for ev := range s {
+			fmt.Println(ev)
 		}
 	}()
 
 	for {
-		kit.Sleep(9999)
+		kit.Sleep(999)
+	}
+}
+
+func (m *M) KeyListen() {
+
+	kCh := make(chan bool)
+	go func() {
+		for {
+			fmt.Println("...event k")
+			kCh <- robotgo.AddEvent("k")
+		}
+	}()
+
+	sCh := make(chan bool)
+	go func() {
+		for {
+			fmt.Println("...event s")
+			sCh <- robotgo.AddEvent("s")
+		}
+	}()
+
+	for {
+		switch {
+		case <-kCh == true:
+			fmt.Println("you press...", "k")
+		case <-sCh == true:
+			fmt.Println("you press...", "s")
+		}
+		fmt.Println("for switch")
+	}
+
+	s := robotgo.Start()
+	defer robotgo.End()
+
+	for ev := range s {
+		fmt.Println(ev)
 	}
 }

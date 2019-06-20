@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
+	for i := 0; i < 2845241; i++ {
+		fmt.Println(i)
+	}
+	return
 	for i := 0; i < 60; i++ {
 		if i%2 == 0 {
 			fmt.Println("22-", i)
