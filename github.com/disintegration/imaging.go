@@ -24,11 +24,11 @@ func main() {
 
 	// 2. 转换成 image.Image
 	img, _, _ := image.Decode(bytes.NewReader(bb))
-	// 2.1 测试下
+	// 2.1 测试下图片是否匹配
 	imgn, err := imaging.Open("./tmp/test.bmp")
 	fmt.Println("imaging...", img.Bounds().String(), imgn.Bounds().String())
 
-	// 3. 切割成几小块
+	// 3. 图片切割成几小块
 	rects := []image.Rectangle{}
 	startX, startY := 8, 8
 	leftRightLen, upDownLen := 20, 15

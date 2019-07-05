@@ -25,6 +25,22 @@ func main() {
 	m.Call(v)
 }
 
+func (m *M) Test() {
+	for i := 0; i < 99; i++ {
+		kit.LeftClick()
+		kit.Sleep(233)
+		kit.KeyPress("enter")
+		kit.Sleep(99)
+		kit.KeyPress("enter")
+		kit.Sleep(99)
+		kit.Fmt("请确认 10.32.*", i)
+	}
+}
+
+func (m *M) TypeString() {
+	robotgo.TypeString("ASDF1234!@#$%")
+}
+
 // Event 测试按键监听
 func (m *M) Event() {
 
