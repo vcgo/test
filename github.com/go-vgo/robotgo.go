@@ -57,6 +57,16 @@ func (m *M) Event() {
 	}
 }
 
+func (m *M) Color() {
+	for i := 0; i < 5; i++ {
+		kit.Fmt("wait", i)
+		kit.Sleep(999)
+	}
+	x, y := robotgo.GetMousePos()
+	kit.Sleep(999)
+	fmt.Println(robotgo.GetPixelColor(x, y))
+}
+
 func (m *M) KeyListen() {
 
 	kCh := make(chan bool)

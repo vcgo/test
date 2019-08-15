@@ -1,7 +1,9 @@
 caches/
+.vscode/
 *.log
 *.png
 
 .DS_Store
 *.toml
+*.exe
 tmp/

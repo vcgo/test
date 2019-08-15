@@ -103,6 +103,7 @@ github.com/lxn/win v0.0.0-20190411092212-ecea61d6d774 h1:uXtDric4KvE3aZoacbvwbXM
 github.com/lxn/win v0.0.0-20190411092212-ecea61d6d774/go.mod h1:jACzEp9RV7NhfPJQkiCNTteU4nkZZVlvkNpYtVOZPfE=
 github.com/lxn/win v0.0.0-20190423131718-c34dbc13543b h1:t2R9WqCcpxMjjy9GKTSGmH19nDcH5JxQSKk5Hh7u574=
 github.com/lxn/win v0.0.0-20190423131718-c34dbc13543b/go.mod h1:jACzEp9RV7NhfPJQkiCNTteU4nkZZVlvkNpYtVOZPfE=
+github.com/lxn/win v0.0.0-20190502150424-4a44be4873a6 h1:HCqkYgg8DYJSSG/XTW4f/AzDsO6rgoBDJeedM/Pe1kw=
 github.com/lxn/win v0.0.0-20190502150424-4a44be4873a6/go.mod h1:jACzEp9RV7NhfPJQkiCNTteU4nkZZVlvkNpYtVOZPfE=
 github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646 h1:zYyBkD/k9seD2A7fsi6Oo2LfFZAehjjQMERAvZLEDnQ=
 github.com/nfnt/resize v0.0.0-20180221191011-83c6a9932646/go.mod h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=
@@ -119,6 +120,7 @@ github.com/qiniu/api.v7 v7.2.5+incompatible h1:6KKaGt7MbFzVGSniwzv7qsM/Qv0or4SkR
 github.com/qiniu/api.v7 v7.2.5+incompatible/go.mod h1:V8/EzlTgLN6q0s0CJmg/I81ytsvldSF22F7h6MI02+c=
 github.com/qiniu/x v7.0.8+incompatible h1:P4LASsfwJY7SoZ13dwqBwGhZh7HKU8cdFVCUkmz0gZ8=
 github.com/qiniu/x v7.0.8+incompatible/go.mod h1:KpRKWYG/GaidPQVpoQ2Cvuvtts3gYnoo2PftgdmAiU4=
+github.com/robotn/gohook v0.0.0-20190305192954-bbbbefb5ff85/go.mod h1:YD5RyCnUEY2xqtkkgeQVZ31UAfAnVPwUxpTE5cwSXg4=
 github.com/robotn/gohook v0.0.0-20190315174547-bc414970f3d6/go.mod h1:YD5RyCnUEY2xqtkkgeQVZ31UAfAnVPwUxpTE5cwSXg4=
 github.com/robotn/gohook v0.0.0-20190413172657-5b9ae1915c78 h1:eQiF6mZ6ThSrUbFPev8VsTjDPYp8XN7DBfSOa4mAf/k=
 github.com/robotn/gohook v0.0.0-20190413172657-5b9ae1915c78/go.mod h1:YD5RyCnUEY2xqtkkgeQVZ31UAfAnVPwUxpTE5cwSXg4=

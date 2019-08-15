@@ -8,6 +8,27 @@ import (
 	"time"
 )
 
+func TestChan(t *testing.T) {
+
+	ch := make(chan int, 1)
+
+	go func() {
+		inV := 1
+		for {
+			ch <- inV
+			fmt.Println(time.Now(), "...in", inV)
+			time.Sleep(1000 * time.Millisecond)
+			inV++
+		}
+	}()
+
+	var outV int
+	for {
+		outV = <-ch
+		fmt.Println(time.Now(), "...out", outV)
+		time.Sleep(4000 * time.Millisecond)
+	}
+}
 func TestMutiChan(t *testing.T) {
 	ch := make(chan int)
 	quit := make(chan int)

@@ -44,6 +44,7 @@ require (
 	github.com/vcgo/van v0.0.0-20181210073545-5595a3ce9bec
 	gopkg.in/azul3d/keyboard.v1 v1.0.0-20140915100615-2789d0c957d2
 	gopkg.in/bufio.v1 v1.0.0-20140618132640-567b2bfa514e // indirect
+	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	gopkg.in/ini.v1 v1.42.0 // indirect
 	gopkg.in/oleiade/lane.v1 v1.0.0
 	gopkg.in/redis.v2 v2.3.2 // indirect
