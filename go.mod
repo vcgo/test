@@ -8,7 +8,7 @@ require (
 	fyne.io/fyne v1.0.1 // indirect
 	github.com/DeanThompson/jpush-api-go-client v0.0.0-20160606124945-0c253969b0ca
 	github.com/Knetic/govaluate v3.0.0+incompatible // indirect
-	github.com/Unknwon/com v0.0.0-20190321035513-0fed4efef755 // indirect
+	github.com/unknwon/com v0.0.0-20190321035513-0fed4efef755 // indirect
 	github.com/cratonica/2goarray v0.0.0-20190331194516-514510793eaa // indirect
 	github.com/disintegration/imaging v1.6.0
 	github.com/emersion/go-sasl v0.0.0-20190520160400-47d427600317

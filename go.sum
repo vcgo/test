@@ -10,8 +10,8 @@ github.com/Knetic/govaluate v3.0.0+incompatible h1:7o6+MAPhYTCF0+fdvoz1xDedhRb4f
 github.com/Knetic/govaluate v3.0.0+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
 github.com/Kodeworks/golang-image-ico v0.0.0-20141118225523-73f0f4cfade9/go.mod h1:7uhhqiBaR4CpN0k9rMjOtjpcfGd6DG2m04zQxKnWQ0I=
 github.com/StackExchange/wmi v0.0.0-20181212234831-e0a55b97c705/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
-github.com/Unknwon/com v0.0.0-20190321035513-0fed4efef755 h1:1B7wb36fHLSwZfHg6ngZhhtIEHQjiC5H4p7qQGBEffg=
-github.com/Unknwon/com v0.0.0-20190321035513-0fed4efef755/go.mod h1:voKvFVpXBJxdIPeqjoJuLK+UVcRlo/JLjeToGxPYu68=
+github.com/unknwon/com v0.0.0-20190321035513-0fed4efef755 h1:1B7wb36fHLSwZfHg6ngZhhtIEHQjiC5H4p7qQGBEffg=
+github.com/unknwon/com v0.0.0-20190321035513-0fed4efef755/go.mod h1:voKvFVpXBJxdIPeqjoJuLK+UVcRlo/JLjeToGxPYu68=
 github.com/akavel/rsrc v0.8.0/go.mod h1:uLoCtb9J+EyAqh+26kdrTgmzRBFPGOolLWKpdxkKq+c=
 github.com/aliyun/aliyun-oss-go-sdk v1.9.6 h1:qKFUuQQbW6LkosAUCH9h1ClCR+fLaQPllP9/CwBKXDY=
 github.com/aliyun/aliyun-oss-go-sdk v1.9.6/go.mod h1:T/Aws4fEfogEE9v+HPhhw+CntffsBHJ8nXQCwKr0/g8=
